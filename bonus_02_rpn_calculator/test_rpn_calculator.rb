@@ -1,5 +1,5 @@
 require './test_helper'
-require 'rpn_@calculator'
+require 'rpn_calculator'
 
 # "RPN" stands for "Reverse Polish Notation".
 # (See the wikipedia entry: http://en.wikipedia.org/wiki/Reverse_Polish_notation)
