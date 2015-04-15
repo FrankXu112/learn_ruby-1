@@ -11,6 +11,7 @@ class TestSillyBlocks < MiniTest::Test
 
     assert_equal "olleh", result
 
+
     # You might be tempted to ask yourself what the hell is happening here.
     # Well no worries! Superman is here to the rescue!
     # (Heh, you probably don't even know whose written these comments.)
@@ -53,7 +54,7 @@ class TestSillyBlocks < MiniTest::Test
   # adder
 
   def test_adds_one_to_value_returned_by_block
-    result = adder do
+    result = adder(1) do
       5
     end
 
@@ -76,7 +77,7 @@ class TestSillyBlocks < MiniTest::Test
   # repeater
   def test_executes_the_block
     n = 2
-    repeater do
+    repeater(1) do
       n += 3
     end
 

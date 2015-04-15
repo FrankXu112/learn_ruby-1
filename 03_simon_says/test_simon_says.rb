@@ -20,11 +20,11 @@ class TestSimonSays < MiniTest::Test
   end
 
   def test_shout_multiple_words
-    assert_equal "HELLO WORLD", shoult("hello world")
+    assert_equal "HELLO WORLD", shout("hello world")
   end
 
   def test_repeat
-    assert_equal "hello hello", repeat("hello")
+    assert_equal "hello hello", repeat("hello", 2)
   end
 
   # Wait a second! How can you make the "repeat" method

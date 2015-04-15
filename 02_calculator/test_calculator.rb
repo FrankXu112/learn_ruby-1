@@ -45,24 +45,31 @@ class TestCalculator < MiniTest::Test
   # If you feel you're up for the challenge, fill in the missing code in the tests below,
   # based off the descriptions, and get them to pass.
   def test_multiplies_two_numbers
+    assert_equal 2, multiple(1, 2)
   end
 
   def test_multiplies_several_numbers
+    assert_equal 15, multiplies_several_numbers([1,3,5])
   end
 
 # http://en.wikipedia.org/wiki/Factorial
   def test_computes_factorial_0
+    assert_equal 1, computers_factorial(0)
   end
 
   def test_computes_factorial_1
+    assert_equal 1, computers_factorial(1)
   end
 
   def test_computes_factorial_2
+    assert_equal 2, computers_factorial(2)
   end
 
   def test_computes_factorial_5
+    assert_equal 120, computers_factorial(5)
   end
 
   def test_computes_factorial_10
+    assert_equal 3628800, computers_factorial(10)
   end
 end
